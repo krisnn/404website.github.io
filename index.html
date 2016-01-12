@@ -68,7 +68,7 @@
       }
 
       function addRepo(repo) {
-        var $item = $("<li>").addClass("repo zoomIn animated grid-1 " + (repo.language || '').toLowerCase());
+        var $item = $("<li>").addClass("repo fadeIn animated grid-1 " + (repo.language || '').toLowerCase());
         var $link = $("<a>").attr("href", repoUrl(repo)).appendTo($item);
         $link.append($("<h2>").text(repo.name));
         $link.append($("<h3>").text(repo.language));
@@ -247,7 +247,7 @@
   </head>
   <body>
     <div id="wrapper" class="grid clearfix">
-      <div id="main" class="grid-1 zoomIn animated">
+      <div id="main" class="grid-1 fadeinLeft animated">
         <div id="logo"><h1>Open Source</h1></div>
         <h1>Project pengembangan Open Source</h1>
 		<p></p>
@@ -258,7 +258,7 @@
       </div>
 
       <div class="grid grid-3 zoomIn animated">
-        <div id="statistics" class="grid-1 alpha header zoomIn animated">
+        <div id="statistics" class="grid-1 alpha header fadeinRight animated">
           <h1>Statistics</h1>
           <p>
             <a href="https://github.com/404website/repositories"><span id="num-repos"><img src="assets/spinner.gif" /></span> public repos</a>
@@ -268,7 +268,7 @@
           <p class="email"><a href="mailto:404website@gmail.com">404website@gmail.com</a></p>
         </div>
 
-        <div id="recently-updated" class="grid-2 omega header zoomIn animated">
+        <div id="recently-updated" class="grid-2 omega header bounceIn animated">
           <h1>Recently updated <a href="https://github.com/404website/repositories">View All on GitHub</a></h1>
           <ol id="recently-updated-repos"></ol>
         </div>
