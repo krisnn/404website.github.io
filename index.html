@@ -2,23 +2,21 @@
 
 <html>
   <head>
-    <title>Twitter &hearts; Open Source</title>
+    <title>404website &hearts; Open Source Project</title>
     <link rel="stylesheet" type="text/css" href="assets/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/grid.css">
     <link rel="stylesheet" type="text/css" href="assets/style.css">
-    <link href="//abs.twimg.com/favicons/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="assets/ico.png" rel="shortcut icon" type="image/x-icon">
     <script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-39101739-1']);
+	  _gaq.push(['_trackPageview']);
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39101739-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
     </script>
     <script type="text/javascript" src="assets/jquery-1.7.1.min.js"></script>
     <script type="text/javascript" src="assets/strftime.js"></script>
@@ -81,7 +79,7 @@
         repos = repos || [];
         page = page || 1;
 
-        var uri = "https://api.github.com/orgs/twitter/repos?callback=?"
+        var uri = "https://api.github.com/orgs/404website/repos?callback=?"
                 + "&per_page=100"
                 + "&page="+page;
 
@@ -141,7 +139,7 @@
       function getNumMembers(page, numMembers) {
         var page = page || 1;
         var numMembers = numMembers || 0;
-        var membersUri = "https://api.github.com/orgs/twitter/members?callback=?"
+        var membersUri = "https://api.github.com/orgs/404website/members?callback=?"
           + "&per_page=100"
           + "&page="+page;
 
